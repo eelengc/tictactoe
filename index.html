@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tictactoe.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div id="container"></div>
+      <h1>Tic Tac Toe</h1>
+      <div class="playerInput">
+        <label>Player X:</label>
+        <input type="text" id="playerX" placeholder="Name" required><br/>
+        <label>Player O:</label>
+        <input type="text" id="playerO" placeholder="Name" required><br/>
+        <button id="startGameButton">Start Game</button>
+      </div>      
+      <section>
+        <h4 id="player"></h4> <h4 class="playerStartFirst"></h4>
+      </section>
+      <div id="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <br />
+      <div class="winningMessage">
+        <p id="winningText"></p>
+        <button id="restartButton">Restart</button>
+        <button id="newGameButton">New Game</button>
+      </div>
+    </div>
+    <script src="tictactoe.js"></script>
+  </body>
+</html>

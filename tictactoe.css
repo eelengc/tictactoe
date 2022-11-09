@@ -1,0 +1,154 @@
+body{
+    background-color: rgb(250, 208, 215);
+    text-align: center;
+}
+
+#container{
+    margin-top: 50px;
+}
+
+h1{
+    font-family: 'Rampart One', san-serif;
+    font-size: 45px;
+}
+
+.playerInput{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(250, 208, 215, 0.9);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Rampart One', san-serif;
+    font-size: 20px;
+}
+
+.playerInput #playerX,
+.playerInput #playerO{
+    border-radius: 25px;
+    padding: 10px 15px;
+    border-color: black;
+}
+
+.playerInput.show,
+.playerStartFirst.show{
+    display: none;
+}
+
+#startGameButton{
+    background-color: white;
+    border-color: black;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 10px 45px;
+    cursor: pointer;
+}
+
+#grid {
+    width: 380px;
+    height: 380px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    background: rgb(192, 132, 132);
+}
+
+.box{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 208, 215);
+    font-family: 'Rampart One', san-serif;
+    font-size: 50px;
+}
+
+.X::after{
+    align-items: center;
+    justify-content: center;
+    content: 'X';
+    font-size: 80px;
+    color: grey;
+}
+
+.O::after{
+    justify-content: center;
+    align-items: center;
+    content: 'O';
+    font-size: 80px;
+    color: white;
+}
+
+h4{
+    font-family: 'Rampart One', san-serif;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#restartButton{
+    background-color: white;
+    border: 1px solid mistyrose;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 10px 32px;
+    cursor: pointer;
+}
+
+#newGameButton{
+    background-color: white;
+    border: 1px solid mistyrose;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#restartButton:hover{
+    background-color: rgb(155, 155, 155);
+    border: 1px solid rgb(155, 155, 155);
+    color: white;
+    font-size: 15px;
+    padding: 10px 32px;
+    cursor: pointer;
+}
+
+#newGameButton:hover{
+    background-color: rgb(155, 155, 155);
+    border: 1px solid rgb(155, 155, 155);
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.winningMessage{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(250, 208, 215, 0.9);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Rampart One', san-serif;
+}
+
+.winningMessage.show{
+    display: flex;
+}
+
+p{
+    color: white;
+    font-size: 50px;
+}
