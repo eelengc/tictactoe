@@ -23,4 +23,4 @@ Each grid box is declared a variable and a class of the player's character is ad
 
 
 
-The game is accessible online via browser https://pages.git.generalassemb.ly/eeleng/Project1/
+The game is accessible online via browser or click here: https://eelengc.github.io/tictactoe/
